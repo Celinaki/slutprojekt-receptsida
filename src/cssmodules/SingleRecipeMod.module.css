@@ -1,0 +1,38 @@
+.wrapper {
+    min-height: 100vh;
+    background-color: peachpuff;
+    width: 100vw;
+    position: relative;
+    display: flex;
+}
+.recipewrap{
+    display: flex;
+    /* align-items: center;
+    align-content: center; */
+    margin: auto;
+}
+.card{
+    background-color: hotpink;
+    width: min-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 5rem;
+}
+img{
+    height: 350px;
+    width: 350px;
+    border-radius: 50% 20%;
+    transition: 300ms;
+    margin-right: 5rem;
+
+}
+img:hover{
+    border-radius: 20% 50%;
+}
+
+.imgdescr{
+    display:flex;
+    align-items: center;
+}

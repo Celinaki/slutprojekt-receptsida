@@ -9,25 +9,26 @@
         5,
         5
     ],
-    "ingredients": {
-        "spiskummin": {
+    "ingredients": [
+       {"name":"spiskummin",
             "amount": 4,
             "unit": "dl"
         },
-        "vitlökspulver": {
+        {
+        "name":"vitlökspulver", 
             "amount": 2,
             "unit": "msk"
         },
-        "peppar": {
+         {"name":"peppar", 
             "amount": 2,
             "unit": "tsk"
         },
-        "vetegluten": {
+         {"name":"vetegluten", 
             "amount": 800,
             "unit": "g"
         }
-    },
-    "instructions": {},
+    ],
+    "instructions": [],
     "category":"seitan"
 }
 {

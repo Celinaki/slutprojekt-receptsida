@@ -1,28 +1,43 @@
-import mongoose from "mongoose"
+import express from "express";
+import mongoose from "mongoose";
+import { receiveMessageOnPort } from "worker_threads";
 mongoose.connect('mongodb://localhost:27017/recipes').catch(err => console.log(err));
 
-//? const mongoose = require('mongoose')
-//mongoose.connect('', {
-//useUnifiedToopology : true,
-//useNewUrlParser: true  
-//}).then(console.log('connected'))
-//
-//
+import recipeRouter from "./routes/recipe"
 
 
 
-var express = require('express');
-var app = express();
-var PORT = 3000;
+// var express = require('express');
+const app = express();
+const port = 3000;
  
-app.use(express.urlencoded({extended:false}));
-   
-app.post('/', function (req, res) {
-    console.log(req.body);
-    res.end();
-});
+app.use(express.json());
+
+
+//Routers
+app.use('/recipe', recipeRouter)
+
+
+// Följande get ROUTES ska finnas:
+// /recipes   hämtar info om alla recipesRouter
+// /recipes?search=abs   hämtar alla recept filtrerade på en söksträng
+// /recipes/:recipeId   hämtar all fino för ett receptsssss
+// /category  ????????????? hämtar alla kategorier
+// /category/:categoryId/recipes   hämtar recept för en viss kategori
+// /category/:categoryId/recipes?search=abc   hämtar alla recept i en kategori filtrerade på en söksträng
+
+
+//FÖLJANDE REACT ROUTES SKA FINNAS
+//Startsida / listar alla recept, sök och kategori ska finnas
+//Kategorisida /category/:categoryId samma som startsida, listar endas recept i viss kategori
+//Receptssida /recipe/:recipeId ett recept visas, med all info.   
+
+
+
+
+
  
-app.listen(PORT, function(err){
-    if (err) console.log(err);
-    console.log("Server listening on PORT", PORT);
-});
+// app.listen(port, (err){
+//     if (err) console.log(err);
+//     console.log("Server listening on PORT", port);
+// });

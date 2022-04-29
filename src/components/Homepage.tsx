@@ -7,7 +7,17 @@ const Home = () =>(
 
     <div className={style.wrapper}>
         <Sidebar></Sidebar>
+        <section className={style.recipes}>
+        <RecipeComp ></RecipeComp>
         <RecipeComp></RecipeComp>
+        <RecipeComp></RecipeComp>
+        <RecipeComp></RecipeComp>
+        <RecipeComp></RecipeComp>
+        <RecipeComp></RecipeComp>
+        <RecipeComp></RecipeComp>
+        <RecipeComp></RecipeComp>
+        <RecipeComp></RecipeComp>
+        </section>
     </div>
 </>
 )
