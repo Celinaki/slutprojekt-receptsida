@@ -1,0 +1,7 @@
+.wrapper {
+    height: 100vh;
+    background-color: peachpuff;
+    width: 100vw;
+    position: relative;
+    display: flex;
+}
