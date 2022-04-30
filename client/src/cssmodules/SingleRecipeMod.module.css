@@ -1,0 +1,55 @@
+.wrapper {
+    min-height: 100vh;
+    background-color: peachpuff;
+    width: 100vw;
+    position: relative;
+    display: flex;
+}
+.recipewrap{
+    display: flex;
+    /* align-items: center; */
+    /* align-content: center; */
+    align-self: center;
+    margin: auto;
+}
+.card{
+    background-color: rgba(211, 192, 201, 0.404);
+    width: min-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 5rem;    
+}
+.card>h1{
+    padding: 0rem 0rem 4rem 0rem;
+    font-size: 34px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+img{
+    height: 350px;
+    width: 350px;
+    border-radius: 40% 20%;
+    transition: 300ms;
+    margin-right: 5rem;
+
+}
+img:hover{
+    border-radius: 20% 40%;
+}
+
+.imgdescr{
+    display:flex;
+    align-items: center;
+}
+.rating{
+    padding-left: 2rem;
+}
+.instructions{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.nodec{
+    list-style-type: none;
+}
