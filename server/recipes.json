@@ -1,4 +1,3 @@
-
 {
     "title": "Seitan kebab",
     "description": "En god seitan kebab",
@@ -10,28 +9,31 @@
         5
     ],
     "ingredients": [
-       {"name":"spiskummin",
-            "amount": 4,
-            "unit": "dl"
-        },
         {
-        "name":"vitlökspulver", 
+            "name": "spiskummin",
             "amount": 2,
             "unit": "msk"
         },
-         {"name":"peppar", 
+        {
+            "name": "vitlökspulver",
+            "amount": 2,
+            "unit": "msk"
+        },
+        {
+            "name": "peppar",
             "amount": 2,
             "unit": "tsk"
         },
-         {"name":"vetegluten", 
+        {
+            "name": "vetegluten",
             "amount": 800,
             "unit": "g"
         }
     ],
     "instructions": [],
-    "category":"seitan"
+    "category": "seitan"
 }
-{
+{   
     "title": "Hummus",
     "description": "En fräsch hummusröra",
     "imageUrl": "https://images.unsplash.com/photo-1637949385162-e416fb15b2ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1452&q=80",
@@ -41,18 +43,39 @@
         5,
         5
     ],
-    "ingredients": {
-        "spiskummin": {
+    "ingredients": [
+
+        {
+            "name": "kikärtor",
+            "amount": 1,
+            "unit": "burk"
+        },
+        {
+            "name": "spiskummin",
             "amount": 1,
             "unit": "msk"
         },
-        "kikärtor":{
-            "amount":1,
-            "unit":"burk"
+        {
+            "name": "vitlök",
+            "amount": 4,
+            "unit": "klyftor"
+        },
+        {
+            "name": "citronsaft",
+            "amount": 4,
+            "unit": "msk"
+        },
+        {
+            "name": "tahini",
+            "amount": 2,
+            "unit": "msk"
         }
-    },
-    "instructions": {},
-    "category":"röror"
+    ],
+    "instructions": ["Häll ut kikärtspadet och skölj kikärtorna sedan. Lägg sedan i de i en bunke.",
+         "Skala vitlökarna, och pressa sedan i dom i bunken.",
+        "Häll i tahini och citronsaften.",
+    "Mixra sedan ihop allt till en röra, tillsammans med spiskumminen, salta även efter önskad smak."],
+    "category": "röror"
 }
 {
     "title": "Frukostsmörgås",
@@ -69,56 +92,62 @@
             "amount": 2,
             "unit": "skivor"
         },
-        "sötpotatis":{
-            "amount":100,
-            "unit":"gram"
-        },
-        "groddar":{
-            "amount":100,
-            "unit":"gram"
-        },
-        "påmackan":{
-            "amount":50,
-            "unit":"gram"
-        }
-    },
-    "instructions":["Koka sötpotatisen i 20 minuter","När potatisen kokat klart så mosa den","Bred på påmackan på smörgåsen","Häll sedan ett lager av moset på och toppa med groddar", "Lägg på den andra skivan ovanpå och ät!"],
-    "category":"frukost"
-}
-
-    "title": "Frukostsmörgås",
-    "description": "Fräsch frukostsmörgås med sötpotatis",
-    "imageUrl": "https://images.unsplash.com/photo-1612152328178-4a6c83d96429?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80"
-    ,
-    "timeInMins": 45,
-    "ratings": [
-        5,
-        0,
-        5
-    ],
-    "ingredients": {
-        "spagetthi": {
-            "amount": 200,
+        "sötpotatis": {
+            "amount": 100,
             "unit": "gram"
         },
-        "havregrädde":{
-            "amount":5,
-            "unit":"dl"
+        "groddar": {
+            "amount": 100,
+            "unit": "gram"
         },
-        "svamp":{
-            "amount":100,
-            "unit":"gram"
-        },
-        "salt":{
-            "amount":1,
-            "unit":"nypa"
+        "påmackan": {
+            "amount": 50,
+            "unit": "gram"
         }
     },
     "instructions": [
-        "Koka pastan",
-        "Medans pastan kokar stek svampen tills de tappat all vätska",
-        "När pastan kokat klart häll av vattnet och häll sedan i grädden och blanda ihop",
-        "Häll i kryddorna tillsammans med svampen och rör om", 
-        "Servera och njut av en smaklig måltid!"],
-    "category":"pasta"
+        "Koka sötpotatisen i 20 minuter",
+        "När potatisen kokat klart så mosa den",
+        "Bred på påmackan på smörgåsen",
+        "Häll sedan ett lager av moset på och toppa med groddar",
+        "Lägg på den andra skivan ovanpå och ät!"
+    ],
+    "category": "frukost"
+}
+
+    "title": "Frukostsmörgås",
+"description": "Fräsch frukostsmörgås med sötpotatis",
+"imageUrl": "https://images.unsplash.com/photo-1612152328178-4a6c83d96429?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80",
+"timeInMins": 45,
+"ratings": [
+    5,
+    0,
+    5
+],
+"ingredients": {
+    "spagetthi": {
+        "amount": 200,
+        "unit": "gram"
+    },
+    "havregrädde": {
+        "amount": 5,
+        "unit": "dl"
+    },
+    "svamp": {
+        "amount": 100,
+        "unit": "gram"
+    },
+    "salt": {
+        "amount": 1,
+        "unit": "nypa"
+    }
+},
+"instructions": [
+    "Koka pastan",
+    "Medans pastan kokar stek svampen tills de tappat all vätska",
+    "När pastan kokat klart häll av vattnet och häll sedan i grädden och blanda ihop",
+    "Häll i kryddorna tillsammans med svampen och rör om",
+    "Servera och njut av en smaklig måltid!"
+],
+"category": "pasta"
 }

@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      <SingleRecipe/>
-      {/* <Homepage/> */}
+      {/* <SingleRecipe/> */}
+      <Homepage/>
     </div>
   );
 }

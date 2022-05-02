@@ -16,6 +16,7 @@ exports.getRecipes = void 0;
 const recipe_1 = __importDefault(require("../models/recipe"));
 const getRecipes = () => __awaiter(void 0, void 0, void 0, function* () {
     const recipes = yield recipe_1.default.find({});
+    console.log("hämtad");
     return recipes;
 });
 exports.getRecipes = getRecipes;
