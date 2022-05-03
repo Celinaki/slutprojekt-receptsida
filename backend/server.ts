@@ -3,7 +3,7 @@ import animalRouter from './routes/animal';
 import { connect } from 'mongoose';
 import recipeRouter from './routes/recipe'
 import RecipeModel from './db/models/recipe';
-connect('mongodb+srv://Celina:<PASSWORD>.@cluster0.8qoep.mongodb.net/recept?retryWrites=true&w=majority')
+connect('mongodb+srv://Celina:<PASSWORD>@cluster0.8qoep.mongodb.net/recept?retryWrites=true&w=majority')
 
 const cors = require('cors');
 
