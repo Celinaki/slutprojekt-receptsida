@@ -1,4 +1,8 @@
 import style from '../cssmodules/RecipeMod.module.css'
+import {Route, BrowserRouter as Router, Routes, Link} from 'react-router-dom'
+import { receiveMessageOnPort } from 'worker_threads';
+import StarRatings from './ratings'
+
 
 const RecipeComp = ({recept} :any) =>{
     function calculateIngredients(){
@@ -9,15 +13,22 @@ const RecipeComp = ({recept} :any) =>{
      return cart
     }
     return(
-<div className={style.wrapper}>
+<div className={style.hold}>
+<Link to={`/recipe/${recept._id}`}> 
+<div className={style.cardwrapper}>
     <h1>{recept.title}</h1>
     <img 
-    src="https://images.unsplash.com/photo-1604085804781-04a7d1adba36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-    alt="" />
+    src={recept.imgUrl}
+    alt="" className={style.img}/>
 <hr />
 <p>{recept.description}</p>
-<section><p>Ingredienser: {calculateIngredients()}</p> <p>Min: {recept.timeInMins}</p></section>
-</div>
+<section className={style.section}>
+    <p>Ingredienser: <p className={style.circle}>{calculateIngredients()}</p></p>
+     <p> Min: <p className={style.circle}> {recept.timeInMins}</p></p>
+     </section>
+<StarRatings recipeRatings={recept.ratings} recipeId={recept._id} edit={false}/>
 
+</div>
+</Link></div>
 )}
 export default RecipeComp

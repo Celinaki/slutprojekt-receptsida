@@ -1,6 +1,8 @@
 .wrapper {
     min-height: 100vh;
-    background-color: peachpuff;
+    /* background-color: peachpuff; */
+        background-color: #C9E0CA;
+
     width: 100vw;
     position: relative;
     display: flex;
@@ -10,4 +12,15 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3rem;
     padding: 5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .recipes{
+            grid-template-columns: 1fr;
+            padding: none;
+        box-sizing: border-box;
+    }
+    .wrapper{
+        width: 100%;
+    }
 }

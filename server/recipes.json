@@ -1,7 +1,7 @@
 {
     "title": "Seitan kebab",
     "description": "En god seitan kebab",
-    "imageUrl": "https://images.unsplash.com/photo-1633436375795-12b3b339712f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    "imgUrl": "https://images.unsplash.com/photo-1633436375795-12b3b339712f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
     "timeInMins": 120,
     "ratings": [
         5,
@@ -30,13 +30,77 @@
             "unit": "g"
         }
     ],
-    "instructions": [],
+    "instructions": [
+        "Blanda i det blöta så att det blir en slät mix",
+        "Blanda sedan ihop veteglutenet med det blöta så gott det går",
+        "Ta ut degen och knåda i cirka 30minuter, desto längre desto mer köttstruktur får den",
+        "Låt den vila under duk i ca 10minuter",
+        "Lägg den i ett varv av bakplåtspapper innerst och aluminiumfolie ytters och vira runt den som en smällkaramell",
+        "Lägg den sedan i en ångkorg i en kastrull med vatten så att den ångas",
+        "Ånga i 80minuter totalt, vänd sida efter 40minuter",
+        "När 80minuter har gått ta ur den därifrån och låt den svalna",
+        "När den svalnat, skär upp den i strimlor och lägg i marinering",
+        "Låt den marineras i ca 30minuter minst, men gärna längre",
+        "När marineringen är klar så stek och servera sedan i en klassisk kebabrulle eller kebabtallrik!"
+    ],
     "category": "seitan"
-}
-{   
-    "title": "Hummus",
-    "description": "En fräsch hummusröra",
-    "imageUrl": "https://images.unsplash.com/photo-1637949385162-e416fb15b2ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1452&q=80",
+},
+{
+    "title": "Seitan gyro",
+    "description": "En god seitan gyros",
+    "imgUrl": "https://images.unsplash.com/photo-1633321702518-7feccafb94d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    "timeInMins": 120,
+    "ratings": [
+        5,
+        5,
+        5
+    ],
+    "ingredients": [
+        {
+            "name": "spiskummin",
+            "amount": 2,
+            "unit": "msk"
+        },
+        {
+            "name": "vitlökspulver",
+            "amount": 2,
+            "unit": "msk"
+        },
+        {
+            "name": "peppar",
+            "amount": 2,
+            "unit": "tsk"
+        },
+        {
+            "name": "vetegluten",
+            "amount": 800,
+            "unit": "g"
+        },
+        {
+            "name": "timjan",
+            "amount": 10,
+            "unit": "g"
+        }
+    ],
+    "instructions": [
+        "Blanda i det blöta så att det blir en slät mix",
+        "Blanda sedan ihop veteglutenet med det blöta så gott det går",
+        "Ta ut degen och knåda i cirka 30minuter, desto längre desto mer köttstruktur får den",
+        "Låt den vila under duk i ca 10minuter",
+        "Lägg den i ett varv av bakplåtspapper innerst och aluminiumfolie ytters och vira runt den som en smällkaramell",
+        "Lägg den sedan i en ångkorg i en kastrull med vatten så att den ångas",
+        "Ånga i 80minuter totalt, vänd sida efter 40minuter",
+        "När 80minuter har gått ta ur den därifrån och låt den svalna",
+        "När den svalnat, skär upp den i strimlor och lägg i marinering",
+        "Låt den marineras i ca 30minuter minst, men gärna längre",
+        "När marineringen är klar så stek och servera sedan i en klassisk kebabrulle eller kebabtallrik!"
+    ],
+    "category": "seitan"
+},
+{
+    "title": "Guacamole",
+    "description": "En fräsch guacamoleröra",
+    "imgUrl": "https://images.unsplash.com/photo-1484980972926-edee96e0960d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
     "timeInMins": 10,
     "ratings": [
         5,
@@ -44,7 +108,53 @@
         5
     ],
     "ingredients": [
-
+        {
+            "name": "avocado",
+            "amount": 3,
+            "unit": "st"
+        },
+        {
+            "name": "salt",
+            "amount": 1,
+            "unit": "msk"
+        },
+        {
+            "name": "vitlök",
+            "amount": 4,
+            "unit": "klyftor"
+        },
+        {
+            "name": "citronsaft",
+            "amount": 4,
+            "unit": "msk"
+        },
+        {
+            "name": "rödlök",
+            "amount": 1,
+            "unit": "st"
+        }
+    ],
+    "instructions": [
+        "Skär upp avocadona och gröp ur dom.",
+        "Mosa sedan dom med en gaffel och häll i en skål",
+        "Skala vitlökarna, och pressa sedan i dom i skålen",
+        "Finhacka rödlöken",
+        "Häll i salt och citronsaften i skålen",
+        "Blanda sedan ihop allt till en röra tillsammans med rödlöken"
+    ],
+    "category": "röror"
+},
+{
+    "title": "Hummus",
+    "description": "En fräsch hummusröra",
+    "imgUrl": "https://images.unsplash.com/photo-1637949385162-e416fb15b2ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1452&q=80",
+    "timeInMins": 10,
+    "ratings": [
+        5,
+        5,
+        5
+    ],
+    "ingredients": [
         {
             "name": "kikärtor",
             "amount": 1,
@@ -71,40 +181,46 @@
             "unit": "msk"
         }
     ],
-    "instructions": ["Häll ut kikärtspadet och skölj kikärtorna sedan. Lägg sedan i de i en bunke.",
-         "Skala vitlökarna, och pressa sedan i dom i bunken.",
+    "instructions": [
+        "Häll ut kikärtspadet och skölj kikärtorna sedan. Lägg sedan i de i en bunke.",
+        "Skala vitlökarna, och pressa sedan i dom i bunken.",
         "Häll i tahini och citronsaften.",
-    "Mixra sedan ihop allt till en röra, tillsammans med spiskumminen, salta även efter önskad smak."],
+        "Mixra sedan ihop allt till en röra, tillsammans med spiskumminen, salta även efter önskad smak."
+    ],
     "category": "röror"
 }
 {
     "title": "Frukostsmörgås",
     "description": "Fräsch frukostsmörgås med sötpotatis",
-    "imageUrl": "https://images.unsplash.com/photo-1608025373402-08326f89a3ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    "imgUrl": "https://images.unsplash.com/photo-1608025373402-08326f89a3ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
     "timeInMins": 10,
     "ratings": [
         5,
         5,
-        5
+        2
     ],
-    "ingredients": {
-        "rågbröd": {
+    "ingredients": [
+        {
+            "name": "rågbröd",
             "amount": 2,
             "unit": "skivor"
         },
-        "sötpotatis": {
+        {
+            "name": "sötpotatis",
             "amount": 100,
             "unit": "gram"
         },
-        "groddar": {
+        {
+            "name": "groddar",
             "amount": 100,
             "unit": "gram"
         },
-        "påmackan": {
+        {
+            "name": "påmackan",
             "amount": 50,
             "unit": "gram"
         }
-    },
+    ],
     "instructions": [
         "Koka sötpotatisen i 20 minuter",
         "När potatisen kokat klart så mosa den",
@@ -113,41 +229,95 @@
         "Lägg på den andra skivan ovanpå och ät!"
     ],
     "category": "frukost"
-}
-
-    "title": "Frukostsmörgås",
-"description": "Fräsch frukostsmörgås med sötpotatis",
-"imageUrl": "https://images.unsplash.com/photo-1612152328178-4a6c83d96429?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80",
-"timeInMins": 45,
-"ratings": [
-    5,
-    0,
-    5
-],
-"ingredients": {
-    "spagetthi": {
-        "amount": 200,
-        "unit": "gram"
-    },
-    "havregrädde": {
-        "amount": 5,
-        "unit": "dl"
-    },
-    "svamp": {
-        "amount": 100,
-        "unit": "gram"
-    },
-    "salt": {
-        "amount": 1,
-        "unit": "nypa"
-    }
 },
-"instructions": [
-    "Koka pastan",
-    "Medans pastan kokar stek svampen tills de tappat all vätska",
-    "När pastan kokat klart häll av vattnet och häll sedan i grädden och blanda ihop",
-    "Häll i kryddorna tillsammans med svampen och rör om",
-    "Servera och njut av en smaklig måltid!"
-],
-"category": "pasta"
+{
+    "title": "Krämig pasta",
+    "description": "Krämig vegansk pastarätt!",
+    "imgUrl": "https://images.unsplash.com/photo-1612152328178-4a6c83d96429?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80",
+    "timeInMins": 45,
+    "ratings": [
+        5,
+        3,
+        5,
+        4,
+        5
+    ],
+    "ingredients": [
+        {
+            "name": "spagetthi",
+            "amount": 200,
+            "unit": "gram"
+        },
+        {
+            "name": "havregrädde",
+            "amount": 5,
+            "unit": "dl"
+        },
+        {
+            "name": "svamp",
+            "amount": 100,
+            "unit": "gram"
+        },
+        {
+            "name": "salt",
+            "amount": 1,
+            "unit": "nypa"
+        },
+    ],
+    "instructions": [
+        "Koka pastan",
+        "Medans pastan kokar stek svampen tills de tappat all vätska",
+        "När pastan kokat klart häll av vattnet och häll sedan i grädden och blanda ihop",
+        "Häll i kryddorna tillsammans med svampen och rör om",
+        "Servera och njut av en smaklig måltid!"
+    ],
+    "category": "pasta"
+},
+{
+    "title": "Krämig currypasta",
+    "description": "Curry pastarätt!",
+    "imgUrl": "https://images.unsplash.com/photo-1626028937210-754d2118d5f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=838&q=80",
+    "timeInMins": 45,
+    "ratings": [
+        5,
+        3,
+        5,
+        4,
+        5
+    ],
+    "ingredients": [
+        {
+            "name": "spagetthi",
+            "amount": 200,
+            "unit": "gram"
+        },
+        {
+            "name": "havregrädde",
+            "amount": 5,
+            "unit": "dl"
+        },
+        {
+            "name": "svamp",
+            "amount": 100,
+            "unit": "gram"
+        },
+        {
+            "name": "salt",
+            "amount": 1,
+            "unit": "nypa"
+        },
+        {
+            "name": "curry",
+            "amount": 1,
+            "unit": "msk"
+        }
+    ],
+    "instructions": [
+        "Koka pastan",
+        "Medans pastan kokar stek svampen tills de tappat all vätska",
+        "När pastan kokat klart häll av vattnet och häll sedan i grädden och blanda ihop",
+        "Häll i kryddorna tillsammans med svampen och rör om",
+        "Servera och njut av en smaklig måltid!"
+    ],
+    "category": "pasta"
 }

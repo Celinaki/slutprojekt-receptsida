@@ -1,49 +1,76 @@
 import style from '../cssmodules/SingleRecipeMod.module.css'
 import Sidebar from './Sidebar'
+import { useParams } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import axios from 'axios'
+import StarRatings from './ratings'
+import Navbar from './Navbar'
 
-const SingleRecipe = () => (
-    <div className={style.wrapper}>
-        <Sidebar />
-        <div className={style.recipewrap}>
-            <article className={style.card}>
-                <h1>Receptnamn</h1>
-                <section className={style.imgdescr}>
-                    <img src="https://images.unsplash.com/photo-1612152328178-4a6c83d96429?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80" alt="" />
-                    <h2>En härlig pastasås med champinjoner och lök. </h2>
-                </section>
-                <section className={style.instructions}>
-                    <section>
-                        <h2>Ingredienser</h2>
-                        <ul className={style.nodec}>
-                            <li>
-                                $Name, $unit $amount
-                            </li>
-                        </ul>
+const SingleRecipe = () => {
+    const [recipe, setRecipe] = useState<any>({});
+    const { recipeId } = useParams()
+    useEffect(() => {
+        console.log(recipeId)
+        const url = `http://localhost:3000/recipes/${recipeId}`
+        console.log(url)
+        axios.get(url)
+            .then(res => {
+                console.log(res)
+                setRecipe(res.data)
+            })
+            .catch(err => {
+                console.log(err)
+            })
+    }, []);
+    const [voted, setVote] = useState(false)
+    const setClicked = () => {
+        setVote(true)
+
+
+    }
+
+    return (
+        <>
+        
+            <Navbar />
+            <div className={style.bigwrapper}>
+                <Sidebar />
+                <div className={style.recipewrap}>
+                    <article className={style.card}>
+                        <h1>{recipe.title}</h1>
+                        <section className={style.imgdescr}>
+                            <img src={recipe.imgUrl} alt="" className={style.bigimg} />
+                            <h2>{recipe.description} </h2>
+                        </section>
+                        <section className={style.instructions}>
+                            <section className={style.lists}>
+                                <h2>Ingredienser</h2>
+                                <ul className={style.nodec}>
+                                    {recipe.ingredients && recipe.ingredients?.map((ingredient: any) => (
+                                        <li className={style.vegan} key={recipe._id}>&#x1f331;{ingredient.name.charAt(0).toUpperCase() + ingredient.name.slice(1)} {ingredient.amount} {ingredient.unit}</li>
+                                    ))}                        </ul>
+                            </section>
+                            <section className={style.lists}>
+                                <h2>Instruktioner</h2>
+                                <ol className={style.ul}>
+                                    {recipe.instructions && recipe.instructions?.map((step: any) => (
+                                        <li key={step.index}>{step}</li>
+                                    ))}
+                                </ol>
+                            </section>
+                        </section>
+                    </article>
+                    <section className={style.rating}>
+
+                        {/* <span  {setClicked((clicked) => false &&)} > test</span> */}
+                        {(voted === false) ? <><h1>Lägg ett betyg!</h1> <span onClick={setClicked}>{recipe.ratings && <StarRatings edit={true} recipeId={recipe._id} recipeRatings={recipe.ratings} />}</span> </>: <h1>Tack för ditt betyg!</h1>}
                     </section>
-                    <section>
-                        <h2>Instruktioner</h2>
-                        <ul>
-                            <li>
-                                Gräs
-                            </li>
-                            <li>
-                                Gräs
-                            </li>
-                            <li>
-                                Gräs
-                            </li>
-                            <li>
-                                Gräs
-                            </li>
-                            
-                        </ul>
-                    </section>
-                </section>
-            </article>
-            <section className={style.rating}>Fem</section>
-        </div>
+                </div>
 
 
-    </div>
-)
+            </div>
+        </>
+
+    )
+}
 export default SingleRecipe

@@ -1,32 +1,50 @@
 import { getSuggestedQuery } from '@testing-library/react';
-import React, {useState} from 'react';
+import React, { FormEvent, useEffect, useState } from 'react';
 import style from '../cssmodules/NavbarMod.module.css'
-const Navbar = () => {
+import { Link, Navigate, useNavigate, useParams } from 'react-router-dom'
+import { ChangeEvent } from 'react'
+import { Router } from 'express';
+const Navbar = (props: any) => {
 
-    const [query,setQuery] = useState('');
-    // const [result,setResult] = useState<Item[] | undefined>();
+    const [linkTo, setLinkTo] = useState<any>([]);
+    const [recipesFound, setRecipesFound] = useState([]);
+    const [recipeSearch, setRecipeSearch] = useState('');
+    const { recipeId } = useParams()
+    const updateState = (val: string) => {
+        props.onUpdateQuery(val)
+    }
+    const [menuTrue, setMenuTrue] = useState()
 
-const textChange = (event: React.ChangeEvent<HTMLInputElement>) =>{
-    console.log("Kalla på api query")
-    const searchstring = event.target.value;
-    setQuery(searchstring)
-    console.log(searchstring)
-};
-    return(
+    const [foo, setFoo] = useState<any>('')
+    return (
+        <div className={style.navwrapper}>
+            
+            <Link to={'/'}> <h1 className={style.heading} >
+                Greenylicious
+            </h1>
+            </Link>
+            {(recipeId) ? '' : <form className={style.form} >
+                <span className={style.hamburger}><hr /> <hr /> <hr /></span>
+                <input type="text"
+                    id="searchText"
+                    className={style.input}
+                    placeholder="Sök på ett recept"
+                    onChange={(e: ChangeEvent<HTMLInputElement>) => updateState(e.target.value)}
+                // onKeyDown={handleKeyDown}
+                />
 
-    
+                {/* <button>Sök </button> */}
+                
+            </form>}
 
-    <div className={style.wrapper}>
-        <h1 className={style.heading} >
-            Green foodheart
-        </h1>  
 
-        <input type="text" 
-        className={style.input}
-        placeholder="Sök på ett recept"
-        onChange={textChange}
-        /> 
-</div>
-    )
+        </div>
+    );
+
+
 }
+
 export default Navbar
+
+
+

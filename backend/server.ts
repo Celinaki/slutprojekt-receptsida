@@ -1,15 +1,16 @@
 import express, { json, Request, Response } from 'express'
 import animalRouter from './routes/animal';
 import { connect } from 'mongoose';
-import recipeRouter from './routes/recipe'
+import recipeRouter from './routes/recipe';
+import categoryRouter from './routes/category';
 import RecipeModel from './db/models/recipe';
 connect('mongodb+srv://Celina:<PASSWORD>@cluster0.8qoep.mongodb.net/recept?retryWrites=true&w=majority')
 
 const cors = require('cors');
 
 const app = express();
-
 app.use(cors());
+
 
 app.use(json());
 const port = 3000;
@@ -24,7 +25,9 @@ app.listen(port, () => {
 
 app.use('/animal', animalRouter)
 
-app.use('/recipe',recipeRouter)
+app.use('/recipes',recipeRouter)
+
+app.use('/category', categoryRouter)
 
 
 
