@@ -2,7 +2,6 @@
     min-height: 100vh;
     /* background-color: peachpuff; */
         background-color: #C9E0CA;
-
     width: 100vw;
     position: relative;
     display: flex;
@@ -16,11 +15,16 @@
 
 @media only screen and (max-width: 600px) {
     .recipes{
-            grid-template-columns: 1fr;
+            /* grid-template-columns: 1fr; */
             padding: none;
         box-sizing: border-box;
+        padding: 4rem 0rem;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
     }
     .wrapper{
         width: 100%;
+        justify-content: center;
     }
 }

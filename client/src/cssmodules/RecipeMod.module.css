@@ -58,7 +58,7 @@ hr {
 
 @media only screen and (max-width: 600px) {
 .cardwrapper{
-    padding: 1.5rem 0rem;
+    padding: 1.5rem 1rem;
 }
 .img {
     width: 100px;
@@ -66,5 +66,11 @@ hr {
     border-radius: 50%;
     align-self: center;
     justify-self: center;
+}
+p:first-of-type{
+    text-align: center;
+}
+.section p{
+    text-align: left;
 }
 }

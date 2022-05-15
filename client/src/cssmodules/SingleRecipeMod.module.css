@@ -3,7 +3,7 @@
     /* background-color: peachpuff; */
     background-color: #C9E0CA;
 
-    width: 100vw;
+    /* width: 100vw; */
     position: relative;
     display: flex;
     
@@ -69,4 +69,67 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .ul{
     padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    html{
+        margin: 0;
+        width: auto;
+    }
+    .card h1{
+        padding:2rem 0rem;
+    }
+    .bigwrapper{
+        box-sizing: border-box;
+        padding-bottom: 4rem;
+    }
+    .imgdescr{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    
+        background-color:#145858;
+        color: white;
+        /* text-align:bottom; */
+    }
+    .bigimg{
+        /* box-sizing:inherit;*/
+        width: 100%; 
+        /* aspect-ratio: 1/1; */
+        /* width:max-content; */
+        
+        border-radius: 0px;
+        height: 15rem;
+        margin: 0;
+    }
+    .rating{
+        padding: 0;
+        text-align: center;
+    }
+    .card{
+     width: 80%;
+     padding: 0px 15px 0px 15px;
+     align-self: center;
+     text-align: center;
+     margin-top: 4rem;
+     
+    }
+    .instructions{
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .recipewrap{
+        flex-direction: column;
+    }
+    .lists{
+        width: 80%;
+        
+    }
+     li{
+        padding-bottom: 15px;
+    }
+    .lists:nth-of-type(2){
+        text-align: left;
+    }
 }

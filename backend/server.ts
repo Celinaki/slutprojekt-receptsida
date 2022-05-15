@@ -4,7 +4,14 @@ import { connect } from 'mongoose';
 import recipeRouter from './routes/recipe';
 import categoryRouter from './routes/category';
 import RecipeModel from './db/models/recipe';
-connect('mongodb+srv://Celina:<PASSWORD>@cluster0.8qoep.mongodb.net/recept?retryWrites=true&w=majority')
+import dotenv from 'dotenv'
+
+require('dotenv').config()
+connect(`${process.env.MONGOLAB_URI}`)
+
+
+
+
 
 const cors = require('cors');
 

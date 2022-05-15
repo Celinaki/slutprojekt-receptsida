@@ -44,6 +44,7 @@
         justify-content: center;
         box-sizing: border-box;
         padding: 0;
+        position: relative;
     }
     .navwrapper h1{
         font-size: 3rem;
@@ -53,18 +54,29 @@
     .hamburger{
         display: block;
         position: absolute;
-        right:85%;
-        top: 10%;
+        left:3%;
+        bottom:0%;
+        transform: translateY(50%);
         font-size: 20px;
-        width: 3rem;       
+        width: 3rem;     
+        z-index: 899;  
     }
-    .hamburger hr{
-        color: rgb(255, 255, 255);
+    .hamburger img{
+        width: 44px;
+        height: 44px;
     }
+  
     .input{
-        padding: 0.4rem 2rem;
+        padding: 0.9rem 2.5rem;
         align-self: center;
         margin: auto;
+        position: absolute;
+        bottom: 0;
+        right: 19%;
+        /* transform: translateX(20px); */
+        transform: translateY(50%);
+
+        z-index: 500;
     }
     .form{
         display: flex;
@@ -72,5 +84,35 @@
         align-items: center;
         width: 100%;
 
+    }
+    .menumobile{
+        background-color:  #F7B318;
+        background-image: url('../assets/menudraperFigma.svg') ;
+        /* background-repeat:repeat-y; */
+        background-position: 50%;
+        position: fixed;
+        display: flex;
+        top:0px;
+        left:0px;
+        right: 0px;
+        bottom:0px ;
+        z-index: 900;
+    }
+    .menumobile img{
+        width: 40px;
+        height: 40px;
+        margin: 1rem 0rem 0rem 1rem;
+    }
+    .categoriesmenu{
+        display: flex;
+        /* justify-content: center; */
+        text-align: center;
+        flex-direction: column;
+        width: 70%;
+        padding-top: 30%;
+    }
+    .categoriesmenu h2{
+        text-decoration: underline;
+        text-underline-position: 5px below;
     }
     }
