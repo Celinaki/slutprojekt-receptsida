@@ -33,7 +33,7 @@ const CategoryView = () =>{
         console.log(query)
         console.log(categoryTitle)
         if(query && categoryTitle){
-            axios.get(`http://localhost:3000/category/${categoryTitle}/recipes?search=${query}`)    
+            axios.get(`https://frozen-meadow-83935.herokuapp.com/category/${categoryTitle}/recipes?search=${query}`)    
                 .then(res => {
                 console.log(res)
                 setRecipeList(res.data)
@@ -44,7 +44,7 @@ const CategoryView = () =>{
 
         }
         else if(categoryTitle){
-            axios.get(`http://localhost:3000/category/${categoryTitle}`)
+            axios.get(`https://frozen-meadow-83935.herokuapp.com/category/${categoryTitle}`)
             .then(res => {
                 console.log(res)
                 setRecipeList(res.data)
@@ -54,7 +54,7 @@ const CategoryView = () =>{
             })
         }
         else
-        axios.get('http://localhost:3000/category')
+        axios.get('https://frozen-meadow-83935.herokuapp.com/category')
         .then(res => {
             console.log(res)
             setRecipeList(res.data)
