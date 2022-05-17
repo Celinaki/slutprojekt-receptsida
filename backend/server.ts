@@ -1,5 +1,4 @@
 import express, { json, Request, Response } from 'express'
-import animalRouter from './routes/animal';
 import { connect } from 'mongoose';
 import recipeRouter from './routes/recipe';
 import categoryRouter from './routes/category';
@@ -26,7 +25,6 @@ app.listen(port, () => {
     console.log(`Example app lyssnar på port ${port}`)
 })
 
-app.use('/animal', animalRouter)
 
 app.use('/recipes',recipeRouter)
 
