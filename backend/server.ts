@@ -3,8 +3,6 @@ import animalRouter from './routes/animal';
 import { connect } from 'mongoose';
 import recipeRouter from './routes/recipe';
 import categoryRouter from './routes/category';
-import RecipeModel from './db/models/recipe';
-import dotenv from 'dotenv'
 
 require('dotenv').config()
 connect(`${process.env.MONGOLAB_URI}`)
