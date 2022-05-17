@@ -33,7 +33,7 @@ const Home = () =>{
     useEffect(() =>{
         console.log('hej')
         if(query){
-            axios.get(`http://localhost:3000/recipes/?search=${query}`)    
+            axios.get(`https://frozen-meadow-83935.herokuapp.com/recipes/?search=${query}`)    
                 .then(res => {
                 console.log(res)
                 setRecipeList(res.data)
@@ -44,7 +44,7 @@ const Home = () =>{
 
         }
         else{
-             axios.get('http://localhost:3000/recipes')
+             axios.get('https://frozen-meadow-83935.herokuapp.com/recipes')
         .then(res => {
             console.log(res)
             setRecipeList(res.data)
