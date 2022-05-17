@@ -8,9 +8,6 @@ require('dotenv').config()
 connect(`${process.env.MONGOLAB_URI}`)
 
 
-
-
-
 const cors = require('cors');
 
 const app = express();
