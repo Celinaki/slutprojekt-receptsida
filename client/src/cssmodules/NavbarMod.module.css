@@ -86,17 +86,27 @@
 
     }
     .menumobile{
-        background-color:  #F7B318;
-        background-image: url('../assets/menudraperFigma.svg') ;
+        /* background-color:  #F7B318; */
+        background-color:#C8E0CA;
+        background-image: url('../assets/lgreenMenu.svg');
+        /* background-image: url('../assets/menudraperFigma.svg') ; */
         /* background-repeat:repeat-y; */
-        background-position: 50%;
         position: fixed;
-        display: flex;
         top:0px;
         left:0px;
         right: 0px;
         bottom:0px ;
+        display: flex;
         z-index: 900;
+        background-position: 0%;
+        background-size: contain;
+        background-repeat:round;
+        box-sizing: border-box;
+        background-image: image-set(1/6);
+        /* background-position: 50%;
+        
+
+        */
     }
     .menumobile img{
         width: 40px;
