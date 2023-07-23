@@ -21,7 +21,7 @@ const Sidebar = () =>{
     const [seitans, setSeitans] = useState<any>()
     useEffect(()=>{
     const fetchRec = async()=>{
-        await fetch('https://frozen-meadow-83935.herokuapp.com/category/seitan')
+        await fetch('https://web-production-a108.up.railway.app/category/seitan')
         .then(res=> res.json())
         .then(res=> {
             setSeitans([...res].length);
@@ -51,7 +51,7 @@ const Sidebar = () =>{
     const [pastas, setPastas] = useState<any>()
     useEffect(()=>{
     const fetchRec = async()=>{
-        await fetch('https://frozen-meadow-83935.herokuapp.com/category/pasta')
+        await fetch('https://web-production-a108.up.railway.app/category/pasta')
         .then(res=> res.json())
         .then(res=> {
             setPastas([...res].length);
@@ -65,7 +65,7 @@ const Sidebar = () =>{
     const [röror, setRöror] = useState<any>()
     useEffect(()=>{
     const fetchRec = async()=>{
-        await fetch('https://frozen-meadow-83935.herokuapp.com/category/röror')
+        await fetch('https://web-production-a108.up.railway.app/category/röror')
         .then(res=> res.json())
         .then(res=> {
             setRöror([...res].length);
@@ -79,7 +79,7 @@ const Sidebar = () =>{
     const [frukost, setFrukost] = useState<any>()
     useEffect(()=>{
     const fetchRec = async()=>{
-        await fetch('https://frozen-meadow-83935.herokuapp.com/category/frukost')
+        await fetch('https://web-production-a108.up.railway.app/category/frukost')
         .then(res=> res.json())
         .then(res=> {
             setFrukost([...res].length);

@@ -11,7 +11,7 @@ const SingleRecipe = () => {
     const { recipeId } = useParams()
     useEffect(() => {
         console.log(recipeId)
-        const url = `https://frozen-meadow-83935.herokuapp.com/recipes/${recipeId}`
+        const url = `https://web-production-a108.up.railway.app/recipes/${recipeId}`
         console.log(url)
         axios.get(url)
             .then(res => {
