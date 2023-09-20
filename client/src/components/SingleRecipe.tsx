@@ -31,7 +31,7 @@ const SingleRecipe = () => {
 
     return (
         <>
-        
+
             <Navbar />
             <div className={style.bigwrapper}>
                 <Sidebar />
@@ -63,7 +63,7 @@ const SingleRecipe = () => {
                     <section className={style.rating}>
 
                         {/* <span  {setClicked((clicked) => false &&)} > test</span> */}
-                        {(voted === false) ? <><h1>Lägg ett betyg!</h1> <span onClick={setClicked}>{recipe.ratings && <StarRatings edit={true} recipeId={recipe._id} recipeRatings={recipe.ratings} />}</span> </>: <h1>Tack för ditt betyg!</h1>}
+                        {(voted === false) ? <><h1>Lägg ett betyg!</h1> <span onClick={setClicked}>{recipe.ratings && <StarRatings edit={true} recipeId={recipe._id} recipeRatings={recipe.ratings} />}</span> </> : <h1>Tack för ditt betyg!</h1>}
                     </section>
                 </div>
 
