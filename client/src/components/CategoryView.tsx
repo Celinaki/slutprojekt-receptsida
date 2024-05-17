@@ -33,7 +33,7 @@ const CategoryView = () =>{
         console.log(query)
         console.log(categoryTitle)
         if(query && categoryTitle){
-            axios.get(`https://web-production-a108.up.railway.app/category/${categoryTitle}/recipes?search=${query}`)    
+            axios.get(`https://planned-sammy-celinaki.koyeb.app/category/${categoryTitle}/recipes?search=${query}`)    
                 .then(res => {
                 console.log(res)
                 setRecipeList(res.data)
@@ -44,7 +44,7 @@ const CategoryView = () =>{
 
         }
         else if(categoryTitle){
-            axios.get(`https://web-production-a108.up.railway.app/category/${categoryTitle}`)
+            axios.get(`https://planned-sammy-celinaki.koyeb.app/category/${categoryTitle}`)
             .then(res => {
                 console.log(res)
                 setRecipeList(res.data)
@@ -54,7 +54,7 @@ const CategoryView = () =>{
             })
         }
         else
-        axios.get('https://web-production-a108.up.railway.app/category')
+        axios.get('https://planned-sammy-celinaki.koyeb.app/category')
         .then(res => {
             console.log(res)
             setRecipeList(res.data)

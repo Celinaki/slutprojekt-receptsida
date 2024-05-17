@@ -21,7 +21,7 @@ const Sidebar = () => {
     const [seitans, setSeitans] = useState<any>()
     useEffect(() => {
         const fetchRec = async () => {
-            await fetch('https://web-production-a108.up.railway.app/category/seitan')
+            await fetch('https://planned-sammy-celinaki.koyeb.app/category/seitan')
                 .then(res => res.json())
                 .then(res => {
                     setSeitans([...res].length);
@@ -52,7 +52,7 @@ const Sidebar = () => {
     const [pastas, setPastas] = useState<any>()
     useEffect(() => {
         const fetchRec = async () => {
-            await fetch('https://web-production-a108.up.railway.app/category/pasta')
+            await fetch('https://planned-sammy-celinaki.koyeb.app/category/pasta')
                 .then(res => res.json())
                 .then(res => {
                     setPastas([...res].length);
@@ -67,7 +67,7 @@ const Sidebar = () => {
     const [röror, setRöror] = useState<any>()
     useEffect(() => {
         const fetchRec = async () => {
-            await fetch('https://web-production-a108.up.railway.app/category/röror')
+            await fetch('https://planned-sammy-celinaki.koyeb.app/category/röror')
                 .then(res => res.json())
                 .then(res => {
                     setRöror([...res].length);
@@ -82,7 +82,7 @@ const Sidebar = () => {
     const [frukost, setFrukost] = useState<any>()
     useEffect(() => {
         const fetchRec = async () => {
-            await fetch('https://web-production-a108.up.railway.app/category/frukost')
+            await fetch('https://planned-sammy-celinaki.koyeb.app/category/frukost')
                 .then(res => res.json())
                 .then(res => {
                     setFrukost([...res].length);
