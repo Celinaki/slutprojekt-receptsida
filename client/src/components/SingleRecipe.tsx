@@ -6,6 +6,7 @@ import axios from "axios";
 import StarRatings from "./ratings";
 import Navbar from "./Navbar";
 import { FaStar, FaRegClock } from "react-icons/fa";
+import Divider from "@mui/material/Divider";
 
 const SingleRecipe = () => {
   const [recipe, setRecipe] = useState<any>({});
@@ -74,14 +75,15 @@ const SingleRecipe = () => {
                       fontWeight: "bolder",
                     }}
                   >
-                    10min
+                    {recipe.timeInMins} min
                   </span>
                 </span>
               </div>
 
               <div className={style.instructions}>
-                <div className={style.lists}>
+                <div className={style.ingredients}>
                   <h2>Ingredients</h2>
+                  <Divider style={{ marginTop: "8px" }} variant="fullWidth" />
                   <ul className={style.plantList}>
                     {recipe.ingredients &&
                       recipe.ingredients?.map((ingredient: any) => (
@@ -89,7 +91,7 @@ const SingleRecipe = () => {
                           className={style.vegan}
                           key={`${ingredient.index}_ingredient`}
                         >
-                          &#x1f331;
+                          <span style={{ marginRight: 8 }}> &#x1f331;</span>
                           {ingredient.name.charAt(0).toUpperCase() +
                             ingredient.name.slice(1)}{" "}
                           {ingredient.amount} {ingredient.unit}

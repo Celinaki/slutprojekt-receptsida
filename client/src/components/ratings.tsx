@@ -19,10 +19,11 @@ const calculateAverage = (rating: any) => {
 
 const StyledStars = styled(ReactStars)`
   display: flex;
+  gap: 0.2rem;
 `;
 
-const starColor = "#145858";
-const emptyStarColor = "#7faf7b";
+const starColor = " rgb(241, 210, 32)";
+const emptyStarColor = "rgb(255, 236, 130)";
 
 const Stars = ({ recipeRatings, recipeId, edit }: ratingProps) => {
   const ratingChanged = async (newRating: any) => {
